@@ -9,6 +9,7 @@ import React, { Component } from 'react'
               mesg:'From Lifecycle C Suresh'
          }
          console.log('Lifecycle C Constructor');
+         componentDidMount()
      }
      static getDerivedStateFromProps(props,state){
 
@@ -19,7 +20,7 @@ import React, { Component } from 'react'
      componentDidMount(){
          console.log('Lifecycle C componentDidMount');
      }
-     
+  
      shouldComponentUpdate(){
         console.log('LifecycleC shouldcomponetUpdate');
         return true;
