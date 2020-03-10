@@ -5,7 +5,7 @@ import Header from './compoonents/header/header'
 import Greet from './compoonents/header/Greet'
 import Welcome from './compoonents/header/Welcome'
 import Message from './compoonents/header/Message'
-import Counter from './compoonents/Counter'
+// import Counter from './compoonents/Counter'
 import FunctionClick from './compoonents/header/FunctionClick'
 import Classclick from './compoonents/header/Classclick'
 import EventBinding from './compoonents/header/EventBinding'
@@ -26,12 +26,15 @@ import IncCounter from './compoonents/HighOrderComponents/Counter'
 import Hover from './compoonents/HighOrderComponents/Hover'
 import ClickCounter from './compoonents/RenderPropsPattern/ClickCounter'
 import Counter2 from './compoonents/RenderPropsPattern/Counter2'
+import Counter from './compoonents/RenderPropsPattern/Counter'
 
 const showregform="Test";
 function App() {
   return (
     <div className="App">  
-    <ClickCounter/>
+    <Counter>    
+      <ClickCounter/>
+    </Counter>
     <Counter2/>
     {/* <IncCounter></IncCounter> */}
     {/* <Hover name="Suresh"/> */}
