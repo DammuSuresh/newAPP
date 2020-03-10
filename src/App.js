@@ -24,13 +24,17 @@ import ErrorCom from './compoonents/errorboundary/error'
 import ErrorBoundary from './compoonents/errorboundary/ErrorBoundary'
 import IncCounter from './compoonents/HighOrderComponents/Counter'
 import Hover from './compoonents/HighOrderComponents/Hover'
+import ClickCounter from './compoonents/RenderPropsPattern/ClickCounter'
+import Counter2 from './compoonents/RenderPropsPattern/Counter2'
 
 const showregform="Test";
 function App() {
   return (
     <div className="App">  
-    <IncCounter></IncCounter>
-    <Hover name="Suresh"/>
+    <ClickCounter/>
+    <Counter2/>
+    {/* <IncCounter></IncCounter> */}
+    {/* <Hover name="Suresh"/> */}
     {/* <ErrorBoundary>
     <ErrorCom heroname="Suresh"></ErrorCom>
     <ErrorCom heroname='Test'></ErrorCom>
